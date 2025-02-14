@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0095ff58, #0095ff58);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus {
+            border-color: #0072ff;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:checked,
+        input[type="checkbox"]:checked {
+            background-color: #0072ff;
+            border-color: #0072ff;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0072ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #003366;
+        }
+
+        address {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Form</h1>
+
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="First name">
+
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="Last name">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+
+        <label>Subject of interest:</label>
+        <input type="radio" name="subject" value="Maths"> Maths
+        <input type="radio" name="subject" value="Physics"> Physics
+
+        <label>Languages known:</label>
+        <input type="checkbox" name="languages" value="english"> English<br>
+        <input type="checkbox" name="languages" value="hindi"> Hindi<br>
+        <input type="checkbox" name="languages" value="telugu"> Telugu<br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="contact-no">Contact No.:</label>
+        <input type="number" id="contact-no" name="Contact No.">
+
+        <address>
+            National Institute of Technology<br>
+            Hanomkonda<br>
+            Telangana<br>
+            1400054<br>
+            India<br>
+        </address>
+
+        <input type="reset" name="Reset">
+        <input type="submit" name="Submit">
+    </form>
+
+</body>
+</html>
